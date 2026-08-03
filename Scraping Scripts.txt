@@ -21,6 +21,7 @@ print(GetTime())
 
 -- remove all filters first
 local buff = {}
+table.insert(buff, "Rarity,Name,Description")
 for _, m in pairs(C_MysticEnchant.QueryEnchants(9999, 1, "", {})) do
    local quality = EnchantCollectionUtil:GetQualityFromQualityName(m.Quality)
    local desc = string.gsub(GetSpellDescription(m.SpellID), '[\n\r]', ' ')
