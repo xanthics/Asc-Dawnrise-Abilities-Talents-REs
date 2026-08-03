@@ -19,14 +19,15 @@ XanPrint(table.concat(buff, "\n"))
 buff = nil
 print(GetTime())
 
--- remove all filters
+-- remove all filters first
 local buff = {}
 for _, m in pairs(C_MysticEnchant.QueryEnchants(9999, 1, "", {})) do
+   local quality = EnchantCollectionUtil:GetQualityFromQualityName(m.Quality)
    local desc = string.gsub(GetSpellDescription(m.SpellID), '[\n\r]', ' ')
    local desc = string.gsub(desc, '|c%x%x%x%x%x%x%x%x(.-)|r', '%1')
    local desc = string.gsub(desc, '|TInterface.-|t', '')
    local desc = string.gsub(desc, '"', "'")   
-   table.insert(buff, '"'..m.SpellName..'","'..desc..'"')
+   table.insert(buff, _G["MYSTIC_ENCHANT_QUALITY"..quality.."_DESC"]..',"'..m.SpellName..'","'..desc..'"')
 end
 
 XanPrint(table.concat(buff, "\n"))
