@@ -1,0 +1,34 @@
+--  filter -> unknown on level 1 character with nothing specced
+local buff = {}
+table.insert(buff, "Class,Tab,Type,Name,ID,Description,RequiredLevel,RequiredClassAEInvestment,RequiredTabAEInvestment,RequiredClassPoints,RequiredAEInvestment,RequiredClassTEInvestment,RequiredTabTEInvestment,RequiredTEInvestment")
+local c = C_CharacterAdvancement
+for i=1,c.GetNumFilteredEntries() do
+   local id = c.GetFilteredEntryAtIndex(i)
+   if id.RequiredLevel <= 60 then
+      if id.Type == "TalentAbility" then id.Type = "Ability" end
+      local str = string.gsub(id.Name, '^%s*(.-)%s*$', '%1')
+      local desc = string.gsub(GetSpellDescription(id.Spells[#id.Spells]), '[\n\r]', ' ')
+      local desc = string.gsub(desc, '|c%x%x%x%x%x%x%x%x(.-)|r', '%1')
+      local desc = string.gsub(desc, '|TInterface.-|t', '')
+      local desc = string.gsub(desc, '"', "'")
+      table.insert(buff, id.Class .. "," .. id.Tab .. "," .. id.Type .. ',"' .. str .. '",' .. id.Spells[1] .. ',"' .. desc .. '",'..id.RequiredLevel.. ','..id.RequiredClassAEInvestment.. ','..id.RequiredTabAEInvestment.. ','..id.RequiredClassPoints.. ','..id.RequiredAEInvestment.. ','..id.RequiredClassTEInvestment.. ','..id.RequiredTabTEInvestment.. ','..id.RequiredTEInvestment)
+   end
+end
+
+XanPrint(table.concat(buff, "\n"))
+buff = nil
+print(GetTime())
+
+-- remove all filters
+local buff = {}
+for _, m in pairs(C_MysticEnchant.QueryEnchants(9999, 1, "", {})) do
+   local desc = string.gsub(GetSpellDescription(m.SpellID), '[\n\r]', ' ')
+   local desc = string.gsub(desc, '|c%x%x%x%x%x%x%x%x(.-)|r', '%1')
+   local desc = string.gsub(desc, '|TInterface.-|t', '')
+   local desc = string.gsub(desc, '"', "'")   
+   table.insert(buff, '"'..m.SpellName..'","'..desc..'"')
+end
+
+XanPrint(table.concat(buff, "\n"))
+buff = nil
+print(GetTime())
