@@ -1,6 +1,5 @@
 --  filter -> unknown on level 1 character with nothing specced
 local buff = {}
-table.insert(buff, "Class,Tab,Type,Name,ID,Description,RequiredLevel,RequiredClassAEInvestment,RequiredTabAEInvestment,RequiredClassPoints,RequiredAEInvestment,RequiredClassTEInvestment,RequiredTabTEInvestment,RequiredTEInvestment")
 local c = C_CharacterAdvancement
 for i=1,c.GetNumFilteredEntries() do
    local id = c.GetFilteredEntryAtIndex(i)
@@ -15,13 +14,18 @@ for i=1,c.GetNumFilteredEntries() do
    end
 end
 
+table.sort(buff, function(a,b) return string.lower(a) < string.lower(b) end)
+table.insert(buff, 1, "Class,Tab,Type,Name,ID,Description,RequiredLevel,RequiredClassAEInvestment,RequiredTabAEInvestment,RequiredClassPoints,RequiredAEInvestment,RequiredClassTEInvestment,RequiredTabTEInvestment,RequiredTEInvestment")
 XanPrint(table.concat(buff, "\n"))
 buff = nil
 print(GetTime())
 
--- remove all filters first
+
+
+
+
+-- Run separately
 local buff = {}
-table.insert(buff, "Rarity,Name,Description")
 for _, m in pairs(C_MysticEnchant.QueryEnchants(9999, 1, "", {})) do
    local quality = EnchantCollectionUtil:GetQualityFromQualityName(m.Quality)
    local desc = string.gsub(GetSpellDescription(m.SpellID), '[\n\r]', ' ')
@@ -31,6 +35,8 @@ for _, m in pairs(C_MysticEnchant.QueryEnchants(9999, 1, "", {})) do
    table.insert(buff, _G["MYSTIC_ENCHANT_QUALITY"..quality.."_DESC"]..',"'..m.SpellName..'","'..desc..'"')
 end
 
+table.sort(buff, function(a,b) return string.lower(a) < string.lower(b) end)
+table.insert(buff, 1, "Rarity,Name,Description")
 XanPrint(table.concat(buff, "\n"))
 buff = nil
 print(GetTime())
