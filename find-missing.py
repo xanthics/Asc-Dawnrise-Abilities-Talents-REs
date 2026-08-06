@@ -15,5 +15,5 @@ for i in dusk.copy():
         del dusk[dusk.index(i)]
 
 with open('dawn_missing.csv', 'w') as f:
-    f.write('Class,Tab,Type,Name,ID,Description,RequiredLevel,RequiredClassAEInvestment,RequiredTabAEInvestment,RequiredClassPoints,RequiredAEInvestment,RequiredClassTEInvestment,RequiredTabTEInvestment,RequiredTEInvestment')
+    f.write('Class,Tab,Type,Name,ID,Description,RequiredLevel,RequiredClassAEInvestment,RequiredTabAEInvestment,RequiredClassPoints,RequiredAEInvestment,RequiredClassTEInvestment,RequiredTabTEInvestment,RequiredTEInvestment\n')
     f.write(''.join(dusk))
