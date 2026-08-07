@@ -6,6 +6,7 @@ for i=1,c.GetNumFilteredEntries() do
    if id.RequiredLevel <= 60 then
       if id.Type == "TalentAbility" then id.Type = "Ability" end
       local str = string.gsub(id.Name, '^%s*(.-)%s*$', '%1')
+      local str = string.gsub(str, '"', "'")
       local desc = string.gsub(GetSpellDescription(id.Spells[#id.Spells]), '[\n\r]', ' ')
       local desc = string.gsub(desc, '|c%x%x%x%x%x%x%x%x(.-)|r', '%1')
       local desc = string.gsub(desc, '|TInterface.-|t', '')
