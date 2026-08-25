@@ -127,7 +127,7 @@ DeathKnight,Unholy,Talent,"Outbreak",49013,"Increases the damage of Plague Strik
 DeathKnight,Unholy,Talent,"Rage of Rivendare",50117,"Your spells and abilities deal 10% more damage to targets infected with your Blood Plague.    Increases your expertise by 5.",40,0,0,0,0,0,12,30
 DeathKnight,Unholy,Talent,"Ravenous Dead",48965,"Increases your total Strength by 3% and the contribution your Ghouls get from your Strength and Stamina by 60%",12,0,0,0,0,0,0,0
 DeathKnight,Unholy,Talent,"Reaping",49208,"Whenever you hit with Blood Strike or Pestilence there is a 100% chance that the Blood Rune becomes a Death Rune when it activates.      Death Runes count as a Blood, Frost or Unholy Rune.",24,0,0,0,0,0,6,15
-DeathKnight,Unholy,Talent,"Unholy Blight",49194,"Causes the victims of your Grave Coil to be surrounded by a vile swarm of unholy insects, taking 10% of the damage done by the Grave Coil over 10 sec, and preventing any diseases on the victim from being dispelled.",18,0,0,0,0,0,3,9
+DeathKnight,Unholy,Talent,"Unholy Blight",49194,"Causes the victims of your Grave Coil to be surrounded by a vile swarm of unholy insects, taking 50% of the damage done by the Grave Coil over 10 sec, and preventing any diseases on the victim from being dispelled.",18,0,0,0,0,0,3,9
 DeathKnight,Unholy,Talent,"Unholy Command",49588,"Reduces the cooldown of your Death Grip ability by 10 sec.",22,0,0,0,0,0,6,12
 DeathKnight,Unholy,Talent,"Vicious Strikes",51745,"Increases the critical strike chance by 6% and critical strike damage bonus by 30% of your Plague Strike and Scourge Strike.",10,0,0,0,0,0,0,0
 DeathKnight,Unholy,Talent,"Virulence",48962,"Increases your hit chance by 3%.    Reduces the chance that your damage over time diseases can be cured by 30%.",10,0,0,0,0,0,0,0
