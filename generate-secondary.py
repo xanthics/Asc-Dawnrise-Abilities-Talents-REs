@@ -1,9 +1,9 @@
-with open("dusksink.csv", 'r') as f:
+with open("dusk_all.csv", 'r') as f:
     dusk = f.readlines()
-with open("ability_talent.csv", 'r') as f:
+with open("dawn_ability_talent.csv", 'r') as f:
     dawn = f.readlines()
     dawn_ids = [x.split(',')[4] for x in dawn]
-with open("RE.csv", 'r') as f:
+with open("dawn_RE.csv", 'r') as f:
     dawn_RE = f.readlines()
 REs = []
 dusk_ability = []
