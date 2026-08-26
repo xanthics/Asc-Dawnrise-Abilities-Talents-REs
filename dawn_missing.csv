@@ -64,7 +64,7 @@ General,General1,Talent,"Celestial Replenishment",275263,"Triggering an Eclipse 
 General,General1,Talent,"Charged Tides",285240,"Casting Lightning Bolt, Chain Lightning or triggering Lightning Rod grants you Charged Tides.      Charged Tides Your next Chain Heal or Healing Wave deals 10% increased healing and has a 25% reduced cast time. Stacks up to 4 times and lasts 12 sec.",10,0,0,0,0,0,0,0
 General,General1,Talent,"Clarity of the Mind",285561,"Your Omen of Clarity talent has an additional 4% chance to activate.",20,0,0,0,0,0,0,0
 General,General1,Talent,"Clean Pass",277485,"Your Glaive Toss consumes your Piercing Shots bleed to deal its full damage increased by 125%.",30,0,0,0,0,0,0,0
-General,General1,Talent,"Cleanse In Flames",281573,"Exorcism, Judgement, Hammer of Wrath and Holy Shock deal 25% increased damage to targets afflicted by your Holy Fire.",20,0,0,0,0,0,0,0
+General,General1,Talent,"Cleanse In Flames",281573,"Crusader Strike, Divine Storm, Exorcism, Judgement, Hammer of Wrath and Holy Shock deal 25% increased damage to targets afflicted by your Holy Fire.",20,0,0,0,0,0,0,0
 General,General1,Talent,"Coldshot",277525,"Hunter shots reduce the cast time of your next Ray of Frost by 15%. Stacks up to 5 times and lasts 30 sec.",60,0,0,0,0,0,0,0
 General,General1,Talent,"Collective Conscious",282029,"Your Tranquility also restores 15% base mana when it heals.",20,0,0,0,0,0,0,0
 General,General1,Talent,"Combat Medic",283949,"Your Bandage now grows more effective with each heal, increasing the healing your ally receives from Bandage by 15%, stacks up to 8 times.",10,0,0,0,0,0,0,0
@@ -165,7 +165,7 @@ General,General1,Talent,"Shaken",281701,"Casting Fear causes your target to beco
 General,General1,Talent,"Shapeshift Specialist",281714,"Shapeshifting cost is reduced by 20%.",10,0,0,0,0,0,0,0
 General,General1,Talent,"Shapeshifter's Aim",281712,"Using Mangle grants you Shapeshifter's Aim.      Shapeshifter's Aim Increases the damage of your hunter shots by 30%. Lasts 15 sec.",10,0,0,0,0,0,0,0
 General,General1,Talent,"Shapeshifter's Fangs",281710,"Hunter shots grant you Shapeshifter's Fangs.    Shapeshifter's Fangs Damage of your next direct Cat ability is increased by 50%. Max 3 charges. Lasts 8 sec.",10,0,0,0,0,0,0,0
-General,General1,Talent,"Shield of Wrath",281934,"Your Avenger's Shield cooldown is reduced by 40%, but it no longer slows enemies or jumps to additional targets.  Does not work with Shield of the Templar.",36,0,0,0,0,0,0,0
+General,General1,Talent,"Shield of Wrath",281934,"Your Avenger's Shield deals 50% increased damage and its cooldown is reduced by 40%, but it no longer slows enemies or jumps to additional targets.  Does not work with Shield of the Templar.",36,0,0,0,0,0,0,0
 General,General1,Talent,"Shrouded in Shrapnel",285780,"Dealing damage with Colossus Smash now increases your armor by 15% for 8 sec and taking damage from Stagger reduces the active cooldown of Colossus Smash by 4 second.",30,0,0,0,0,0,0,0
 General,General1,Talent,"Skull Crusher",281352,"Your Slam reduces the cooldown of Death Wish by 1 second.",22,0,0,0,0,0,0,0
 General,General1,Talent,"Sniper",281475,"Standing still for 3 seconds grants you Sniper.    Sniper Increases the range of your Aimed Shot and Kill Shot by 1 yards and increases their damage dealt by 4%. Moving removes the stacks. Stacks up to 10 times.",20,0,0,0,0,0,0,0
